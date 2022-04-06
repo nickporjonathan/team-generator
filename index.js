@@ -49,3 +49,12 @@ function CreateIntern() {
     CreateTeam();
   });
 }
+
+function CreateFiles() {
+  let HTML = Template.GeneratePage(team);
+  writeFile(HTML);
+  copyFile();
+  console.log("Pages and Styles created");
+}
+
+CreateManager();
