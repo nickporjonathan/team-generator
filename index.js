@@ -33,3 +33,11 @@ function CreateTeam() {
     }
   });
 }
+
+function CreateEngineer() {
+  inquirer.prompt(Questions.engineer).then((data) => {
+    let newEngineer = new Engineer(data.name, data.id, data.email, data.github);
+    team.push(newEngineer);
+    CreateTeam();
+  });
+}
