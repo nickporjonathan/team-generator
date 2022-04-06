@@ -4,8 +4,8 @@ test("create employee object", () => {
   const employee = new Employee("testName", 0, "test@email.ca");
   expect(employee.name).toBe("testName");
   expect(employee.email).toBe("test@email.ca");
-  expect(employee.id).toEqual(0);
   expect(employee.role).toBe("Employee");
+  expect(employee.id).toEqual(0);
   expect(employee.id).toEqual(expect.any(Number));
 });
 
