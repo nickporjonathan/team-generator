@@ -41,3 +41,11 @@ function CreateEngineer() {
     CreateTeam();
   });
 }
+
+function CreateIntern() {
+  inquirer.prompt(Question.intern).then((data) => {
+    letnewIntern = new Intern(data.name, data.id, data.email, data.school);
+    team.push(newIntern);
+    CreateTeam();
+  });
+}
