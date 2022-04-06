@@ -65,3 +65,7 @@ function GeneratePage(data) {
     </body>
     </html>`;
 }
+
+module.exports = {
+  GeneratePage,
+};
