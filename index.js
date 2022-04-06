@@ -9,10 +9,10 @@ import { writeFile, copyFile } from "./src/Generate";
 let team = [];
 
 function CreateManager() {
-  prompt(manager).then(function newEmployee(data) {
-    let newManager = new Manager(data.name, data.id, data.email, data.office);
-    team.push(newManager);
-    CreateTeam();
-  });
+  prompt(manager).then((data) => {
+          let newManager = new Manager(data.name, data.id, data.email, data.office);
+          team.push(newManager);
+          CreateTeam();
+      });
 }
 
