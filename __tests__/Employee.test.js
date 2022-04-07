@@ -1,6 +1,6 @@
 import Employee from "../lib/Employee";
 
-test("create employee object", () => {
+test("creates object", () => {
   const employee = new Employee("testName", 0, "test@email.ca");
   expect(employee.name).toBe("testName");
   expect(employee.email).toBe("test@email.ca");

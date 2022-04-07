@@ -1,6 +1,6 @@
 import Engineer from "../lib/Engineer";
 
-test("create engineer object", () => {
+test("creates object", () => {
   const engineer = new Engineer("testName", 0, "test@email.ca", "testGit");
   expect(engineer.name).toBe("testName");
   expect(engineer.email).toBe("test@email.ca");

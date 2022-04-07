@@ -1,6 +1,6 @@
 import Intern from "../lib/Intern";
 
-test("create intern object", () => {
+test("creates object", () => {
   const intern = new intern("testName", 0, "test@email.ca", "testSchool");
   expect(intern.name).toBe("testName");
   expect(intern.email).toBe("test@email.ca");
